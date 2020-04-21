@@ -642,6 +642,8 @@ namespace Intersect.Editor.Localization
             public static LocalizedString warp = @"Warp";
 
             public static LocalizedString zblock = @"Block";
+            
+            public static LocalizedString death = @"Death";
 
             public static LocalizedString zdimension = @"Z-Dimension";
 
