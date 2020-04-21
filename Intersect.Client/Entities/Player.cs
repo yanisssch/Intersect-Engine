@@ -1692,6 +1692,10 @@ namespace Intersect.Client.Entities
                                 return -3;
                             }
                         }
+                        else if (gameMap.Attributes[tmpX, tmpY].Type == MapAttributes.Death)//////
+                        {
+                            PacketSender.SendDeath(true);
+                        }
                     }
                 }
                 else
