@@ -27,6 +27,8 @@ namespace Intersect.GameObjects.Maps
                     return new MapNpcAvoidAttribute();
                 case MapAttributes.Warp:
                     return new MapWarpAttribute();
+                case MapAttributes.Death:
+                    return new MapDeathAttribute();
                 case MapAttributes.Sound:
                     return new MapSoundAttribute();
                 case MapAttributes.Resource:
@@ -131,6 +133,13 @@ namespace Intersect.GameObjects.Maps
 
             return att;
         }
+
+    }
+    
+    public class MapDeathAttribute : MapAttribute
+    {
+
+        public override MapAttributes Type { get; } = MapAttributes.Death;
 
     }
 
