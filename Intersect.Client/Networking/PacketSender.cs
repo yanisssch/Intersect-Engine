@@ -60,6 +60,11 @@ namespace Intersect.Client.Networking
         {
             Network.SendPacket(new BlockPacket(blocking));
         }
+        
+        public static void SendDeath(bool death)
+        {
+            Network.SendPacket(new DeathPacket(death));
+        }
 
         public static void SendDirection(byte dir)
         {
