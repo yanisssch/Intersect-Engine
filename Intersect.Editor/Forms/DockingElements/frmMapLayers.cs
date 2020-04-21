@@ -408,6 +408,11 @@ namespace Intersect.Editor.Forms.DockingElements
             HideAttributeMenus();
             grpWarp.Visible = true;
         }
+        
+        private void rbDeath_CheckedChanged(object sender, EventArgs e)
+        {
+            HideAttributeMenus();
+        }
 
         private void rbSound_CheckedChanged(object sender, EventArgs e)
         {
@@ -488,6 +493,10 @@ namespace Intersect.Editor.Forms.DockingElements
             {
                 return (int) MapAttributes.Warp;
             }
+            else if (rbDeath.Checked == true)
+            {
+                return (int)MapAttributes.Death;
+            }
             else if (rbSound.Checked == true)
             {
                 return (int) MapAttributes.Sound;
@@ -545,6 +554,10 @@ namespace Intersect.Editor.Forms.DockingElements
                 ((MapWarpAttribute) tmpMap.Attributes[x, y]).X = (byte) nudWarpX.Value;
                 ((MapWarpAttribute) tmpMap.Attributes[x, y]).Y = (byte) nudWarpY.Value;
                 ((MapWarpAttribute) tmpMap.Attributes[x, y]).Direction = (WarpDirection) cmbDirection.SelectedIndex;
+            }
+            else if (rbDeath.Checked)
+            {
+                tmpMap.Attributes[x, y] = MapAttribute.CreateAttribute(MapAttributes.Death);
             }
             else if (rbSound.Checked)
             {
@@ -823,6 +836,7 @@ namespace Intersect.Editor.Forms.DockingElements
             rbZDimension.Text = Strings.Attributes.zdimension;
             rbNPCAvoid.Text = Strings.Attributes.npcavoid;
             rbWarp.Text = Strings.Attributes.warp;
+            rbDeath.Text = Strings.Attributes.death;
             rbItem.Text = Strings.Attributes.itemspawn;
             rbSound.Text = Strings.Attributes.mapsound;
             rbResource.Text = Strings.Attributes.resourcespawn;
