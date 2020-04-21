@@ -15,6 +15,8 @@ namespace Intersect.Enums
         NpcAvoid,
 
         Warp,
+        
+        Death,
 
         Sound,
 
