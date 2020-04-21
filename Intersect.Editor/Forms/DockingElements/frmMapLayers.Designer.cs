@@ -48,6 +48,7 @@ namespace Intersect.Editor.Forms.DockingElements
             this.rbZDimension = new DarkUI.Controls.DarkRadioButton();
             this.rbItem = new DarkUI.Controls.DarkRadioButton();
             this.rbBlocked = new DarkUI.Controls.DarkRadioButton();
+            this.rbDeath = new DarkUI.Controls.DarkRadioButton();
             this.grpResource = new DarkUI.Controls.DarkGroupBox();
             this.grpZResource = new DarkUI.Controls.DarkGroupBox();
             this.rbLevel2 = new DarkUI.Controls.DarkRadioButton();
@@ -346,6 +347,17 @@ namespace Intersect.Editor.Forms.DockingElements
             this.rbBlocked.TabStop = true;
             this.rbBlocked.Text = "Blocked";
             this.rbBlocked.CheckedChanged += new System.EventHandler(this.rbBlocked_CheckedChanged);
+            // 
+            // rbDeath
+            // 
+            this.rbDeath.AutoSize = true;
+            this.rbDeath.ForeColor = System.Drawing.Color.Gainsboro;
+            this.rbDeath.Location = new System.Drawing.Point(115, 76);
+            this.rbDeath.Name = "rbDeath";
+            this.rbDeath.Size = new System.Drawing.Size(64, 17);
+            this.rbDeath.TabIndex = 51;
+            this.rbDeath.Text = "Death";
+            this.rbDeath.CheckedChanged += new System.EventHandler(this.rbDeath_CheckedChanged);
             // 
             // grpResource
             // 
@@ -1279,6 +1291,7 @@ namespace Intersect.Editor.Forms.DockingElements
             this.pnlAttributes.Controls.Add(this.rbResource);
             this.pnlAttributes.Controls.Add(this.rbSound);
             this.pnlAttributes.Controls.Add(this.rbWarp);
+            this.pnlAttributes.Controls.Add(this.rbDeath);
             this.pnlAttributes.Controls.Add(this.rbNPCAvoid);
             this.pnlAttributes.Controls.Add(this.rbZDimension);
             this.pnlAttributes.Controls.Add(this.rbItem);
@@ -1391,6 +1404,7 @@ namespace Intersect.Editor.Forms.DockingElements
         private DarkRadioButton rbZDimension;
         private DarkRadioButton rbItem;
         private DarkRadioButton rbBlocked;
+        private DarkRadioButton rbDeath;
         private DarkGroupBox grpResource;
         private DarkGroupBox grpSound;
         public DarkComboBox cmbMapAttributeSound;
