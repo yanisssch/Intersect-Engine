@@ -714,6 +714,17 @@ namespace Intersect.Server.Networking
 
             client.Entity.TryBlock(packet.Blocking);
         }
+        
+        //DeathPacket
+        public void HandlePacket(Client client, Player player, DeathPacket packet)
+        {
+            if (player == null)
+            {
+                return;
+            }
+
+            player.Die();
+        }
 
         //BumpPacket
         public void HandlePacket(Client client, Player player, BumpPacket packet)
