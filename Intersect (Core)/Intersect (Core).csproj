@@ -314,6 +314,7 @@
     <Compile Include="Network\Packets\Client\CraftItemPacket.cs" />
     <Compile Include="Network\Packets\Client\CreateAccountPacket.cs" />
     <Compile Include="Network\Packets\Client\CreateCharacterPacket.cs" />
+    <Compile Include="Network\Packets\Client\DeathPacket.cs" />
     <Compile Include="Network\Packets\Client\DeclineTradePacket.cs" />
     <Compile Include="Network\Packets\Client\DeleteCharacterPacket.cs" />
     <Compile Include="Network\Packets\Client\DepositItemPacket.cs" />
