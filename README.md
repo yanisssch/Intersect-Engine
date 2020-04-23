@@ -1,3 +1,6 @@
+# /!\ Information /!\
+This fork is an unofficial version which add death attribute and maybe later more features, /!\ Becareful, this version is not verified by original dev, so some bugs can be present or backdoore etc... Currently no backdoor or bugs are found so you can use if you want, also i try to update code when original dev update code ^^
+
 # Intersect Engine
 
 Intersect provides a complete game development suite for creating 2d mmorpgs with no programming experience or difficult setup steps required! Intersect is powered by [MonoGame](http://monogame.net), and has been designed with stability and performance in mind. Intersect comes with [custom assets](https://github.com/AscensionGameDev/Intersect-Assets) that are free to use in your projects (even commercially) meaning that you can start developing your game in minutes!
@@ -15,17 +18,6 @@ Intersect provides a complete game development suite for creating 2d mmorpgs wit
  * [Licensing](#licensing)
  * [Helpful Links](#helpful-links)
 
-
-## Build Status
-
-Our [build server](https://teamcity.freemmorpgmaker.com/?guest=1) builds, tests, and packages the latest Intersect changes.  The table below shows the current build status for the master and development branches.
-
-| Name  | Status |
-|:---|--------|
-| Master (Stable) | [![Build Status](https://teamcity.freemmorpgmaker.com/app/rest/builds/buildType:stable/statusIcon)](https://teamcity.freemmorpgmaker.com/viewType.html?buildTypeId=stable&guest=1) |
-| Development (Nightly) | [![Build Status](https://teamcity.freemmorpgmaker.com/app/rest/builds/buildType:dev/statusIcon)](https://teamcity.freemmorpgmaker.com/viewType.html?buildTypeId=dev&guest=1) |
-
-
 ## Supported Platforms
 
  * Desktop PCs (Open GL)
@@ -36,12 +28,6 @@ Our [build server](https://teamcity.freemmorpgmaker.com/?guest=1) builds, tests,
 Our editor uses DirectX and must be ran in Windows, but you can host and play your game on any desktop os that supports OpenGL.
 
 We're open to expanding to new platforms (mobile, web, etc) but don't have the capacity to do so at this time. If you're interested in helping out let us know!
-
-
-## Intersect Assets
-
-Intersect is distributed with [custom assets](https://github.com/AscensionGameDev/Intersect-Assets) that have been curated from our community and around the net. Assets all match in style and are all safe to use freely in commercial projects. 
-
 
 ## Support and Contributions
 
