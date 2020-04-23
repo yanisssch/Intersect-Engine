@@ -42,7 +42,7 @@ If you are interested in contributing fixes or features to Intersect, please rea
 If you'd like to help the project by supporting us financially we accept and greatly appreciate donations at [Ascension Game Dev](https://www.ascensiongamedev.com/donate/make-donation/).
 
 
-## Source Code
+## Original Source Code
 
 Getting started with Intersect couldn't be easier. Make sure you have Visual Studio 2017 Community (or later) installed. 
 
